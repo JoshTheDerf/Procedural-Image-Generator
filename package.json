@@ -1,0 +1,50 @@
+{
+  "name": "procedural-image-generator",
+  "version": "0.1.0",
+  "description": "Procedural background image generator.",
+  "author": "Joshua Bemenderfer <tribex10@gmail.com>",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --port 13000",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "generate-theme": "et -i src/styles/element-variables.css",
+    "build-theme": "et -c src/styles/element-variables.css -o src/styles/el-theme -m"
+  },
+  "dependencies": {
+    "chance": "^1.0.4",
+    "color": "^1.0.2",
+    "element-ui": "^1.0.2",
+    "stackblur-canvas": "^1.4.0",
+    "vue": "2.1.4",
+    "vue-color": "^2.0.2",
+    "vue-slider-component": "^2.0.8"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.4",
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.0.0",
+    "babel-preset-latest": "^6.16.0",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.26.0",
+    "element-theme": "^0.2.0",
+    "element-theme-default": "^1.0.6",
+    "eslint": "^3.12.2",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "file-loader": "^0.9.0",
+    "node-sass": "^4.0.0",
+    "postcss-loader": "^1.2.1",
+    "precss": "^1.4.0",
+    "sass-lint": "^1.10.2",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "vue-loader": "10.0.0",
+    "vue-template-compiler": "2.1.4",
+    "webpack": "^2.1.0-beta.25",
+    "webpack-dev-server": "^2.1.0-beta.0"
+  }
+}
